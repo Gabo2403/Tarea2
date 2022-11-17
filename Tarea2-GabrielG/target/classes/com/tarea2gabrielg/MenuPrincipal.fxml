@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="601.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Modelo.MenuPrincipal">
+   <children>
+      <Text layoutX="198.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Button fx:id="botonCatalogo" layoutX="115.0" layoutY="233.0" mnemonicParsing="false" onAction="#abrirVentanaCatalogo" prefHeight="25.0" prefWidth="115.0" style="-fx-background-color: #9fc5e8;" text="Catalogos">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="botonCliente" layoutX="115.0" layoutY="132.0" mnemonicParsing="false" onAction="#abrirVentanaClientes" prefHeight="25.0" prefWidth="115.0" style="-fx-background-color: #9fc5e8;" text="Clientes">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="botonCamisa" layoutX="115.0" layoutY="181.0" mnemonicParsing="false" onAction="#abrirVentanaCamiseta" prefHeight="25.0" prefWidth="115.0" style="-fx-background-color: #9fc5e8;" text="Camisas">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button layoutX="269.0" layoutY="348.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="64.0" style="-fx-background-color: #9fc5e8;" text="Salir">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="listarCliente" layoutX="378.0" layoutY="132.0" mnemonicParsing="false" onAction="#listarClientes" prefHeight="25.0" prefWidth="115.0" style="-fx-background-color: #9fc5e8;" text="Listar Clientes ">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="listarCamisa" layoutX="378.0" layoutY="181.0" mnemonicParsing="false" onAction="#ListarCamisa" prefHeight="25.0" prefWidth="115.0" style="-fx-background-color: #9fc5e8;" text="Listar Camisas">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="listarCatalogo" layoutX="378.0" layoutY="233.0" mnemonicParsing="false" onAction="#listarCatalogos" prefHeight="25.0" prefWidth="115.0" style="-fx-background-color: #9fc5e8;" text="Listar Catalogos">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="botonAnadirCamisaCatalogo" layoutX="230.0" layoutY="294.0" mnemonicParsing="false" onAction="#abrirVentanaAnadirCamisa" style="-fx-background-color: #9fc5e8;" text="Añadir Camisa Catalogo">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Pane layoutX="-5.0" layoutY="-8.0" prefHeight="109.0" prefWidth="609.0" style="-fx-background-color: #9fc5e8;">
+         <children>
+            <Text layoutX="258.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bienvenido a Directory Clothing">
+               <font>
+                  <Font name="Century" size="23.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="75.0" fitWidth="214.0" layoutX="20.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../static/Logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
